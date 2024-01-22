@@ -193,7 +193,7 @@
   <div class="code-box">
     <pre><p><b>Cpp</b></p><hr>
       <code id="code-content">
-#include<iostream>
+#include&lt;iostream&gt;
 using namespace std;
 
 class currencycal {
@@ -727,28 +727,123 @@ int main() {
     char currname;
     double currvalue;
     char currconvertname;
-    char choice;
-    string str1, str2;
-    cout<<"==============================================================="<<endl;
-    cout<<"          WELCOME TO CURRENCY CONVERTOR MADE BY HARSH          "<<endl;
-    cout<<"==============================================================="<<endl;
-    cout<<endl << "PRE-INSTRUCTIONS TO USE THIS CONVERTER" << endl;
-    cout<<"______________________________________" << endl;
-    cout<<endl << "\t Symbol Used for currencies are as follows:->"<<endl<<endl
-        // ... (your existing code)
-        <<"\t UAE Dirham AED = l"<<endl;
+	char choice;
+	string str1,str2;
+    cout&lt;&lt;"         ============================================="&lt;&lt;endl;
+    cout&lt;&lt;"          WELCOME TO CURRENCY CONVERTOR MADE BY HARSH          "&lt;&lt;endl;
+    cout&lt;&lt;"         ============================================="&lt;&lt;endl;
+    cout&lt;&lt;endl &lt;&lt; "PRE-INSTRUCTIONS TO USE THIS CONVERTER"&lt;&lt; endl;
+    cout&lt;&lt;"______________________________________" &lt;&lt; endl;
+    cout&lt;&lt;endl &lt;&lt; "\t Symbol Used for currencies are as follows:->"&lt;&lt;endl&lt;&lt;endl
+         &lt;&lt;"\t Indian Rupees INR = a"&lt;&lt;endl
+         &lt;&lt;"\t United States Dollar USD = b"&lt;&lt;endl
+         &lt;&lt;"\t Europian EURO = c"&lt;&lt;endl
+         &lt;&lt;"\t Japanese YEN = d"&lt;&lt;endl
+         &lt;&lt;"\t Australian dollar AUD = e"&lt;&lt;endl
+         &lt;&lt;"\t Bangladeshi taka BDT = f"&lt;&lt;endl
+         &lt;&lt;"\t British Pound GBP = g"&lt;&lt;endl
+         &lt;&lt;"\t Canadian Dollar CAD = h"&lt;&lt;endl
+         &lt;&lt;"\t Chinese Yuan CNY = i"&lt;&lt;endl
+         &lt;&lt;"\t Pakistani Rupee PKR = j"&lt;&lt;endl
+         &lt;&lt;"\t Russian Ruble RUB = k"&lt;&lt;endl
+         &lt;&lt;"\t UAE Dirham AED = l"&lt;&lt;endl;
 
-    do {
-        // ... (your existing code)
-        cout<<"Conversion: "<<currvalue<<" "<<str1<<" = "<<c1.curr_converter()<<" "<<str2<<endl;
-        cout<<endl<<"Enter (y/Y) to continue Currency Conversion OR any key to EXIT...";
-        cin>>choice;
-    } while (choice=='y' || choice=='Y');
-    cout<<endl<<"========================================"<<endl
-        <<"THANKS FOR USING MY CURRENCY CONVERTOR"<<endl
-        <<"=======================================";
+do {
+    cout&lt;&lt;endl&lt;&lt;"----->";
+    cout&lt;&lt;endl&lt;&lt;"Enter currency name which you want to convert: ";
+    cin&gt;&gt;currname;
+    cout&lt;&lt;"Enter currency value which you want to convert: ";
+    cin&gt;&gt;currvalue;
+    cout&lt;&lt;endl&lt;&lt;"Enter currency name in which you want to convert currency: ";
+    cin&gt;&gt;currconvertname;
+    currencycal c1(currname, currvalue, currconvertname);
+    
+    switch (currname)
+    {case 'a':
+    	str1="Indian Rupee INR";
+    	break;
+    case 'b':
+    	str1="United States Dollar USD";
+    	break;
+    case 'c':
+    	str1="Europian EURO";
+    	break;
+    case 'd':
+    	str1="Japanese YEN";
+    	break;
+    case 'e':
+    	str1="Australian dollar AUD";
+    	break;
+    case 'f':
+    	str1="Bangladeshi taka BDT";
+    	break;
+    case 'g':
+    	str1="British Pound GBP";
+    	break;
+    case 'h':
+    	str1="Canadian Dollar CAD";
+    	break;
+    case 'i':
+    	str1="Chinese Yuan CNY";
+    	break;
+    case 'j':
+    	str1="Pakistani Rupee PKR";
+    	break;
+    case 'k':
+    	str1="Russian Ruble RUB";
+    	break;
+    case 'l':
+    	str1="UAE Dirham AED";
+    	break;
+	}
+    switch (currconvertname)
+    {case 'a':
+    	str2="Indian Rupee INR";
+    	break;
+    case 'b':
+    	str2="United States Dollar USD";
+    	break;
+    case 'c':
+    	str2="Europian EURO";
+    	break;
+    case 'd':
+    	str2="Japanese YEN";
+    	break;
+    case 'e':
+    	str2="Australian dollar AUD";
+    	break;
+    case 'f':
+    	str2="Bangladeshi taka BDT";
+    	break;
+    case 'g':
+    	str2="British Pound GBP";
+    	break;
+    case 'h':
+    	str2="Canadian Dollar CAD";
+    	break;
+    case 'i':
+    	str2="Chinese Yuan CNY";
+    	break;
+    case 'j':
+    	str2="Pakistani Rupee PKR";
+    	break;
+    case 'k':
+    	str2="Russian Ruble RUB";
+    	break;
+    case 'l':
+    	str2="UAE Dirham AED";
+    	break;
+	}
+    cout&lt;&lt;"Conversion: "&lt;&lt;currvalue&lt;&lt;" "&lt;&lt;str1&lt;&lt;" = "
+	&lt;&lt;c1.curr_converter()&lt;&lt;" "&lt;&lt;str2&lt;&lt;endl;
+    cout&lt;&lt;endl&lt;&lt;"Enter (y/Y) to continue Currency Conversion OR any key to EXIT...";
+    cin&gt;&gt;choice;
+} while (choice=='y' || choice=='Y');
+	cout&lt;&lt;endl&lt;&lt;"======================================"&lt;&lt;endl
+	           &lt;&lt;"THANKS FOR USING MY CURRENCY CONVERTOR"&lt;&lt;endl
+			   &lt;&lt;"======================================";
     return 0;
-}      </code>
+}     </code>
     </pre>
     <button class="copy-button" onclick="copyCode()">Copy Code</button>
   </div>
@@ -775,4 +870,4 @@ int main() {
   </footer>
 
 </body>
-</html>
+	</html>
