@@ -1,62 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Copy</title>
+  <title>Harsh Projects</title>
   <style>
-    .code-box {
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin: 10px 0;
-      position: relative;
-      background-color: #E5E4E2;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #f2f2f2;
+    }
+ 
+    pre {
+      white-space: pre-wrap;
+      background-color: #d3d3d3;
       border-radius: 8px;
+      padding: 10px;
+    }
+    nav {
+      margin: 0;
+      background-color: #702963;
+      text-align: center;
+      font-size: 20px;
+      padding: 15px 0;
+      color: #fff;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
     }
 
-    .copy-button {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      padding: 5px;
-      cursor: pointer;
-      border: 1px solid #800080;
-      border-radius: 20px;
-      color: #800080;
-      background-color: #fff;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    nav img {
+      max-height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    nav p {
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+       table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  
+  width: 100%;
+}
+    div {
+        padding: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #702963;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      nav img {
+        display: block;
+        margin: 0 auto 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="code-box">
-    <pre><p><b>Cpp</b></p><hr>
-      <code id="code-content">
-        function myFunction() {
-          console.log("Hello, World!");
-        }
-      </code>
-    </pre>
-    <button class="copy-button" onclick="copyCode()">Copy Code</button>
-  </div>
+  <nav>
+    <img src="Harsh Class 10 CBSE logo-min.png">
+    <p>Harsh Projects</p>
+  </nav>
+<div>
+   <h2 style="padding: 10px; text-align:center; border: 1px solid black; border-radius: 8px;">Currency Converter</h2>
 
-  <script>
-    function copyCode() {
-      var codeContent = document.getElementById('code-content');
-      var range = document.createRange();
-      range.selectNode(codeContent);
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(range);
-      document.execCommand('copy');
-      window.getSelection().removeAllRanges();
-      var copyButton = document.querySelector('.copy-button');
-      copyButton.textContent = 'Code Copied!';
-      setTimeout(function() {
-        copyButton.textContent = 'Copy Code';
-      }, 2000);
+<h2>Purpose:</h2>
+<p>The purpose of this project is to create a currency converter that can convert the value of one currency into another based on the current market rates. This project is useful for travelers, businesses, and forex traders who need to exchange currencies or track the changes in exchange rate valuations. This project also demonstrates the concept of object-oriented programming in C++, which is a powerful and widely used programming paradigm that allows for the creation of modular, reusable, and maintainable code.</p>
+
+<h2>Functionality and Features:</h2>
+<p>The project defines a C++ class named <code>currencycal</code> with methods to perform currency conversion. It uses a switch-case structure to handle various currency conversions. The main function takes user input for the currencies and values, performs the conversion using the class methods, and displays the result. The program continues to prompt the user for more conversions until they choose to exit.<br><br>The project supports the following currencies and their symbols:</p>
+
+<h3>Supported Currencies:</h3>
+<table>
+    <tr style="background-color: #d3d3d3;">
+        <th>Currency Name</th>
+        <th>Symbols Used</th>
+    </tr>
+    <tr>
+        <td>Indian Rupee (INR)</td>
+        <td>a</td>
+    </tr>
+    <tr>
+        <td>United States Dollar (USD)</td>
+        <td>b</td>
+    </tr>
+    <tr>
+        <td>Europian EURO</td>
+        <td>c</td>
+    </tr>
+    <tr>
+        <td>Japanese YEN</td>
+        <td>d</td>
+    </tr>
+    <tr>
+        <td>Australian dollar AUD</td>
+        <td>e</td>
+    </tr>
+    <tr>
+        <td>Bangladeshi taka BDT</td>
+        <td>f</td>
+    </tr>
+    <tr>
+        <td>British Pound GBP</td>
+        <td>g</td>
+    </tr>
+    <tr>
+        <td>Canadian Dollar CAD</td>
+        <td>h</td>
+    </tr>
+    <tr>
+        <td>Chinese Yuan CNY</td>
+        <td>i</td>
+    </tr>
+    <tr>
+        <td>Pakistani Rupee PKR</td>
+        <td>j</td>
+    </tr>
+    <tr>
+        <td>Russian Ruble RUB</td>
+        <td>k</td>
+    </tr>
+    <tr>
+        <td>UAE Dirham AED</td>
+        <td>l</td>
+    </tr>
+</table>
+
+<h2>Installation, Running, and Usage:</h2>
+<p>The project is a C++ program and can be compiled and run using a C++ compiler. Users can follow these steps:</p>
+
+<ol>
+    <li>Copy the code into a C++ file (e.g., <code>currency_converter.cpp</code>).</li>
+    <li>Use a C++ compiler (e.g., <code>g++</code>, Visual Studio) to compile the code.</li>
+    <li>Run the compiled executable.</li>
+    <li>Follow the on-screen instructions to enter currency names and values for conversion.</li>
+</ol>
+
+<h2>Dependencies, Limitations, and Assumptions:</h2>
+<p>
+    <strong>Dependencies:</strong> The project does not have external dependencies and is standalone.
+</p>
+<p>
+    <strong>Limitations:</strong> The currency conversion rates are hardcoded within the program and may not reflect real-time rates.
+</p>
+<p>
+    <strong>Assumptions:</strong> The user inputs the currency names using specific symbols ('a' to 'l') as mentioned in the pre-instructions.
+</p> <h3>Your C++ Code</h3>
+  <pre>
+    // Your C++ code goes here
+    #include<iostream>
+    
+    int main() {
+      std::cout << "Hello, World!" << std::endl;
+      return 0;
     }
-  </script>
+  </pre>
+  </div>
+  <footer>
+    Copyright &copy; Harsh Projects
+  </footer>
 
 </body>
 </html>
