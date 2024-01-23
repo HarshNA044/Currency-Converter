@@ -74,6 +74,12 @@
       background-color: #fff;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
     }
+	  footer {
+text-align: center;
+padding: 20px;
+background-color: #800080;
+color: #fff;
+	    }
     #backToTopBtn {
       display: none;
       position: fixed;
@@ -83,9 +89,10 @@
       color: #fff;
       border: none;
       border-radius: 5px;
-      padding: 10px 15px;
+      padding: 15px 15px;
       cursor: pointer;
       font-size: 16px;
+	    z-index: 2;
     }
 
     #backToTopBtn:hover {
@@ -920,8 +927,6 @@ do {
         document.documentElement.scrollTop = 0;
       });
     });
-  </script>
-  <script>
     function copyCode() {
       var codeContent = document.getElementById('code-content');
       var range = document.createRange();
