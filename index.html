@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harsh Projects Corner</title>
   <style>
-    body {
+body {
       margin: 0;
       padding: 0;
       font-family: 'Times New Roman', serif;
       background-color: #fff;
 	    text-align: justify;
     }
- 
+
     pre {
       white-space: pre-wrap;
       
@@ -53,31 +53,48 @@
 	    margin: 1.5%;
     }
     
-    .code-box {
-      padding: 10px;
-      margin: 10px 0;
-      position: relative;
-	  z-index: 1;
-      border: 0.8px solid black;
-      background-color: #f7f6f5;
-      border-radius: 8px;
-      
-    }
-
+        .code-box {
+            width: 100%;
+            height: 70%;
+            overflow: auto;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            white-space: pre;
+            box-sizing: border-box;
+            border-radius: 8px;
+            margin-top: 0;
+            width: 100%;
+        }
+.header {
+            background-color: #333;
+            font-family: 'Times New Roman', serif;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            box-sizing: border-box;
+            margin: 0;
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius:8px;
+            margin-top: 0;
+            top:0;
+        }
     .copy-button {
       position: absolute;
-      top: 5px;
+      top: 0px;
       right: 5px;
       padding: 5px;
       cursor: pointer;
       font-weight: bold;
-      border: 3px solid #702963;
-      border-radius: 20px;
-      color: #702963;
+      border: 0px;
+      color: white;
+      background-color: #333;
       margin-right: 25px;
-      margin-top: 10px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+      margin-top: 0px;
     }
 	  footer {
 text-align: center;
@@ -118,8 +135,7 @@ color: #fff;
         display: block;
         margin: 0 auto 10px;
       }
-    }
-  </style>
+    }  </style>
 </head>
 <body>
 
@@ -249,9 +265,7 @@ document.getElementById("greeting").innerHTML = greetings();
 <p>
     <strong>Assumptions:</strong> The user inputs the currency names using specific symbols ('a' to 'l') as mentioned in the pre-instructions.
 </p><br> <h3><u>Source Code:</u></h3>
-  <div class="code-box">
-    <pre><h3><b>Cpp</b></h3><hr>
-      <code id="code-content">
+  <div class="code-box"><div class="header">C++<button style="font-family: 'Times New Roman', serif;" class="copy-button" onclick="copyCode()">Copy Code</button></div><pre><code id="code-content">
 #include&lt;iostream&gt;
 using namespace std;
 
@@ -904,8 +918,7 @@ do {
     return 0;
 }     </code>
     </pre>
-    <button class="copy-button" onclick="copyCode()">Copy Code</button>
-		</div> <button id="backToTopBtn"><span class="arrow-up"></span></button>
+   		</div> <button id="backToTopBtn"><span class="arrow-up"></span></button>
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
