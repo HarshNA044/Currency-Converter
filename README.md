@@ -1,5 +1,5 @@
 # Currency Converter
-![Currency Converter Screenshot](Currency Converter.png)
+![Currency Converter Screenshot](Currency%20Converter.png)
 
 ## Purpose
 The purpose of this project is to create a currency converter that can convert the value of one currency into another based on the current market rates. This project is useful for travelers, businesses, and forex traders who need to exchange currencies or track changes in exchange rate valuations. Additionally, this project demonstrates the concept of object-oriented programming in C++, which is a powerful and widely used programming paradigm that allows for the creation of modular, reusable, and maintainable code.
