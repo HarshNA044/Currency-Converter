@@ -922,26 +922,31 @@ do {
 		}</code></pre></div> <button id="backToTopBtn"><span class="arrow-up"></span></button>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var backToTopButton = document.getElementById("backToTopBtn");
+document.addEventListener("DOMContentLoaded", function() {
+  var backToTopButton = document.getElementById("backToTopBtn");
 
-      window.onscroll = function() {
-        scrollFunction();
-      };
+  window.onscroll = function() {
+    scrollFunction();
+  };
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      }
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  }
 
-      backToTopButton.addEventListener("click", function() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      });
+  backToTopButton.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
     });
+  });
+});
     function copyCode() {
       var codeContent = document.getElementById('code-content');
       var range = document.createRange();
