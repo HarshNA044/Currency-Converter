@@ -118,9 +118,7 @@ color: #fff;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
 	  z-index: 2;
     }
-#backToTopBtn:focus {
-      background-color: rgba(112,41,99,0.8);
-}
+
     #backToTopBtn:hover {
       background-color: #0056b3;
     }
@@ -924,32 +922,26 @@ do {
 		}</code></pre></div> <button id="backToTopBtn"><span class="arrow-up"></span></button>
 
   <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var backToTopButton = document.getElementById("backToTopBtn");
+    document.addEventListener("DOMContentLoaded", function() {
+      var backToTopButton = document.getElementById("backToTopBtn");
 
-  window.onscroll = function() {
-    scrollFunction();
-  };
+      window.onscroll = function() {
+        scrollFunction();
+      };
 
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      backToTopButton.style.display = "block";
-    } else {
-      backToTopButton.style.display = "none";
-    }
-  }
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      }
 
-  backToTopButton.addEventListener("click", function() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
+      backToTopButton.addEventListener("click", function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
     });
-    backToTopButton.blur(); // Remove focus after clicking
-  });
-});
     function copyCode() {
       var codeContent = document.getElementById('code-content');
       var range = document.createRange();
