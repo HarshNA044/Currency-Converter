@@ -3,12 +3,13 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harsh Projects Corner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
 body {
       margin: 0;
       padding: 0;
-      font-family: 'Times New Roman', serif;
+      font-family: 'Lato', sans-serif;
       background-color: #fff;
 	    text-align: justify;
     }
@@ -20,9 +21,9 @@ body {
     }
     nav {
       margin: 0px;
-      background-color: #702963;
+      background-color: rgb(112,41,99,0.98);
       text-align: center;
-      font-size: 1px;
+      backdrop-filter: blur(4px);
       padding: 10px;
 	    position: fixed;
 	    top: 0;
@@ -33,8 +34,9 @@ body {
     }
 
     nav img {
-      max-height: 38px;
-      vertical-align: middle;
+        height: 10px;
+      width: 10px;
+      margin-right: 2px;
 	    
     }
 
@@ -56,7 +58,7 @@ body {
     
         .code-box {
             width: 100%;
-            height: 70%;
+            height: 400px;
             overflow: auto;
             padding: 0px;
             background-color: black;
@@ -77,10 +79,9 @@ body {
             top: 0;
             z-index: 1;
             box-sizing: border-box;
+            font-weight: bold;
             margin: 0;
             width: 100%;
-            border-top-left-radius: 8px;
-            border-top-right-radius:8px;
             margin-top: 0;
             top:0;
         }
@@ -136,16 +137,32 @@ color: #fff;
         display: block;
         margin: 0 auto 10px;
       }
-    }  </style>
+    } 
+    /* Default margin-top for mobile devices */
+.nav {
+    margin-top: 20px;
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    .navigation {
+        margin-top: 50px; /* Adjust this value for larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav {
+        margin-top: 80px; /* Adjust this value for even larger screens */
+    }
+}</style>
 </head>
 <body>
 
-  <nav>
-    <img src="Logo.png">
-
+  <nav><img align="left" src="Harsh_Class_10_CBSE_logo-min-removebg-preview.png">
+<p>Harsh's Projects Corner</p>
   </nav>
 <div>
-   <br><br><br><h3 style="background-color: #80008027; padding: 10px; text-align:center; border: 3px solid #800080; border-radius: 8px;">Currency Converter</h3>
+   <br><br><h3 style="background-color: #80008027; padding: 10px; text-align:center; border: 2px solid #800080; border-radius: 8px;">Currency Converter</h3>
 <div class="greeting" ><svg xmlns="http://www.w3.org/2000/svg" x="0" y="0" version="1.1" viewBox="0 0 106.059 106.059"><path d="M90.546 15.518c-20.688-20.69-54.346-20.69-75.03-.005-20.688 20.685-20.686 54.345.002 75.034 20.682 20.684 54.34 20.684 75.026-.004 20.686-20.685 20.684-54.343.002-75.025zm-5.789 69.24c-17.493 17.494-45.961 17.496-63.455.002-17.498-17.497-17.495-45.966 0-63.46 17.494-17.493 45.96-17.495 63.457.002 17.494 17.494 17.492 45.963-.002 63.456zM33.299 44.364h-3.552a.822.822 0 0 1-.82-.817c0-.184.062-.363.175-.507l7.695-9.755c.158-.196.392-.308.645-.308s.486.111.641.304l7.697 9.757c.189.237.229.58.1.859a.822.822 0 0 1-.741.467h-3.554a.59.59 0 0 1-.463-.225l-3.68-4.664-3.681 4.664a.59.59 0 0 1-.462.225zm44.599-1.326a.84.84 0 0 1 .1.859.822.822 0 0 1-.741.467h-3.554a.588.588 0 0 1-.463-.225l-3.681-4.664-3.681 4.664a.59.59 0 0 1-.462.225h-3.552a.822.822 0 0 1-.82-.817c0-.184.062-.363.175-.507l7.695-9.755a.823.823 0 0 1 .645-.308c.254 0 .486.111.642.304l7.697 9.757zm-1.882 21.03c-3.843 8.887-12.843 14.629-22.927 14.629-10.301 0-19.354-5.771-23.064-14.703a3 3 0 1 1 5.54-2.3c2.776 6.686 9.655 11.004 17.523 11.004 7.69 0 14.528-4.321 17.42-11.011a2.999 2.999 0 0 1 3.944-1.563 2.999 2.999 0 0 1 1.564 3.944z"/></svg><span id="greeting"/></div>
 
    <style>
